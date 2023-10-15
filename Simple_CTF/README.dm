@@ -1,4 +1,4 @@
-#Odpovězte na níže uvedené otázky
+# Odpovězte na níže uvedené otázky
 
 ### Kolik služeb je spuštěno pod portem 1000?
 ```
@@ -11,8 +11,15 @@ ssh
 
 ### Jaký CVE používáte proti aplikaci?
 ```
-gobuster dir -u http://10.10.134.145 -w /home/kali/Documents/git/SecLists/Discovery/Web-Content/directory-list-1.0.txt
+gobuster dir -u http://10.10.134.145 -w /home/kali/Documents/git/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt -t 100
 ```
+===============================================================
+/simple               (Status: 301) [Size: 315] [--> http://10.10.134.145/simple/]
+/server-status        (Status: 403) [Size: 301]
+Progress: 220560 / 220561 (100.00%)
+===============================================================
+
+CVE-2019-9053
 
 Na jaký druh zranitelnosti je aplikace zranitelná?
 
